@@ -13,7 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {},
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
+      colors: {
+        "iro-white": "#FFFFFF",
+        "iro-green": "#3A643B",
+        "iro-yellow": "#FFD700",
+        "iro-light-yellow": "# ",
+        "iro-light-green": "#E6F4E0",
+        "iro-dark-green": "#2E4D2B",
+        "iro-dark-yellow": "#B5A642",
+        "iro-bg-green": "#0A3B1E",
+      },
     },
   },
   plugins: [],

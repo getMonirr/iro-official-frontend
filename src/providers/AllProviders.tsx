@@ -5,6 +5,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import StoreProvider from "@/libs/redux/StoreProvider";
+import ThemeProvider from "@/theme/ThemeProvider";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,7 +19,9 @@ const AllProviders = ({ children }: { children: ReactNode }) => {
     <>
       <StoreProvider>
         <ToastContainer />
-        {children}
+        <AntdRegistry>
+          <ThemeProvider>{children}</ThemeProvider>
+        </AntdRegistry>
       </StoreProvider>
     </>
   );

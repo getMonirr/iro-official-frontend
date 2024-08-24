@@ -1,14 +1,20 @@
-import AllProviders from "@/providers/AllProviders";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 
-// inter font
-const inter = Inter({ subsets: ["latin"] });
+// custom import
+import AllProviders from "@/providers/AllProviders";
+
+// ubuntu font
+const ubuntu = Ubuntu({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Typescript Next.js Starter",
-  description: "Created by @getMonirr",
+  title: "IRO Official",
+  description: "Created by IRO Dev Team",
 };
 
 // RootLayout component
@@ -26,7 +32,7 @@ export default function RootLayout({
         overflowX: "hidden",
       }}
     >
-      <body className={inter.className}>
+      <body className={ubuntu.className}>
         <AllProviders>{children}</AllProviders>
       </body>
     </html>
