@@ -8,10 +8,16 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
         token: {
           // Seed Token
           colorPrimary: "#3A643B", // green
-          borderRadius: 2,
+          // borderRadius: 2,
 
           // Alias Token
-          colorBgContainer: "#f6ffed",
+          // colorBgContainer: "#f6ffed",
+        },
+        components: {
+          Button: {
+            primaryShadow: "none",
+            fontFamily: "Ubuntu",
+          },
         },
       }}
     >
