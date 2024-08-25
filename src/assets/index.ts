@@ -1,6 +1,7 @@
 // images
 import iroHeroBg from "@/assets/images/hero/hero-bg.jpg";
 import iroHeroBgCrop from "@/assets/images/hero/iro-bg-crop.png";
+import iroHeroBg2 from "@/assets/images/hero/tree2.jpg";
 import iroLogo from "@/assets/images/shared/iro-logo.jpg";
 
 // svgs
@@ -13,6 +14,7 @@ const assets = {
     iroLogo,
     iroHeroBg,
     iroHeroBgCrop,
+    iroHeroBg2,
   },
   svgs: {
     // languages: {
