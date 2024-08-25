@@ -1,4 +1,6 @@
 // images
+import iroHeroBg from "@/assets/images/hero/hero-bg.jpg";
+import iroHeroBgCrop from "@/assets/images/hero/iro-bg-crop.png";
 import iroLogo from "@/assets/images/shared/iro-logo.jpg";
 
 // svgs
@@ -9,6 +11,8 @@ const assets = {
   icons: {},
   images: {
     iroLogo,
+    iroHeroBg,
+    iroHeroBgCrop,
   },
   svgs: {
     // languages: {
