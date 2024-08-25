@@ -1,10 +1,19 @@
-import { Select } from "antd";
+"use client";
+
+import { Grid, Select } from "antd";
+
+const { useBreakpoint } = Grid;
 
 const LanguageSwitcher = () => {
+  const screens = useBreakpoint();
+
+  // Determine size based on screen size
+  const size = screens.xs ? "small" : "middle";
   return (
     <Select
       defaultValue="BN"
       style={{ width: 100 }}
+      size={size}
       //   onChange={handleChange}
       options={[
         {
@@ -13,8 +22,8 @@ const LanguageSwitcher = () => {
             <span className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="25"
+                height="25"
                 viewBox="0 0 32 32"
               >
                 <rect
@@ -47,8 +56,8 @@ const LanguageSwitcher = () => {
             <span className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="25"
+                height="25"
                 viewBox="0 0 32 32"
               >
                 <rect

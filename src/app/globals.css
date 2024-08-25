@@ -16,3 +16,15 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--iro-light-yellow);
 }
+
+/* nav bar */
+.desktop-navbar .ant-menu-title-content {
+  color: white !important;
+  font-size: medium !important;
+}
+
+.desktop-navbar .ant-menu-submenu-title {
+  color: white !important;
+  size: 10px !important;
+  margin-top: 180% !important;
+}

@@ -1,11 +1,10 @@
 import assets from "@/assets";
 import RootContainer from "@/components/Shared/RootContainer";
-import { Button } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineLogin } from "react-icons/ai";
-import { LiaDonateSolid } from "react-icons/lia";
 import LanguageSwitcher from "../Language/LanguageSwitcher";
+import Donation from "./Donation";
+import Login from "./Login";
 
 const MiddleNavbar = () => {
   return (
@@ -13,9 +12,7 @@ const MiddleNavbar = () => {
       <RootContainer>
         <div className="flex items-center justify-between gap-4">
           <div>
-            <Button icon={<LiaDonateSolid />} type="primary">
-              Donation
-            </Button>
+            <Donation />
           </div>
           <div>
             <Link href="/">
@@ -29,9 +26,7 @@ const MiddleNavbar = () => {
           </div>
           <div className="flex items-center justify-center gap-4">
             <LanguageSwitcher />
-            <Button icon={<AiOutlineLogin />} type="primary">
-              Login
-            </Button>
+            <Login />
           </div>
         </div>
       </RootContainer>

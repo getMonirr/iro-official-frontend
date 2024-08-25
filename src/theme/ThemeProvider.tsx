@@ -12,11 +12,16 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
           // Alias Token
           // colorBgContainer: "#f6ffed",
+          fontFamily: "Ubuntu",
         },
         components: {
           Button: {
             primaryShadow: "none",
             fontFamily: "Ubuntu",
+          },
+          Menu: {
+            // itemColor: "#FFFFFF",
+            horizontalItemSelectedColor: "#FFFFFF",
           },
         },
       }}
