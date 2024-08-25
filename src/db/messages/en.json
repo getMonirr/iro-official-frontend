@@ -63,6 +63,76 @@
       "description": "We are a non-profit organization that works for the welfare of the people. We are always ready to help the people in need. We are always ready to help the people in need. We are always ready to help the people in need.",
       "link": "/about-us",
       "button": "Learn More"
+    },
+    "Footer": {
+      "address": {
+        "title": "Office Location",
+        "address": "KahalGoan, Fulbaria, Mymensingh, Bangladesh",
+        "phone": "+880 1601-996399",
+        "email": "salam@iro.org",
+        "availability": "(Available : Fri - Sun, 10:00 AM to 7:00 PM)"
+      },
+      "usefulLink": {
+        "title": "Useful Links",
+        "links": {
+          "home": {
+            "link": "/",
+            "title": "Home"
+          },
+          "projects": {
+            "link": "/projects",
+            "title": "Projects"
+          },
+          "ongoing_projects": {
+            "link": "/ongoing-project",
+            "title": "Ongoing Projects"
+          },
+          "donor_membership": {
+            "link": "/donor-membership",
+            "title": "Donor & Membership"
+          },
+          "volunteer_registration": {
+            "link": "/volunteer-registration",
+            "title": "Volunteer Registration"
+          },
+          "gallery": {
+            "link": "/gallery",
+            "title": "Gallery"
+          },
+          "notice": {
+            "link": "/notice",
+            "title": "Notice"
+          },
+          "about_us": {
+            "link": "/about-us",
+            "title": "About Us"
+          }
+        },
+        "extraLinks": {
+          "privacyPolicy": {
+            "link": "/privacy-policy",
+            "title": "Privacy Policy"
+          },
+          "termsAndConditions": {
+            "link": "/terms-and-conditions",
+            "title": "Terms & Conditions"
+          },
+          "faq": {
+            "link": "/faq",
+            "title": "FAQ"
+          },
+          "career": {
+            "link": "/career",
+            "title": "Career"
+          }
+        }
+      },
+      "FollowUs": {
+        "title": "Follow Us"
+      },
+      "copyRight": {
+        "title": "Copyright © Islamic Research Organization 2018"
+      }
     }
   }
 }

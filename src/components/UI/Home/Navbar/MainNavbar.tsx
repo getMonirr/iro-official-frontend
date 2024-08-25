@@ -2,6 +2,7 @@
 
 import assets from "@/assets";
 import RootContainer from "@/components/Shared/RootContainer";
+import { navigationKeys } from "@/constant/menu";
 import { Button, Menu } from "antd";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -27,17 +28,6 @@ const MainNavbar = () => {
   const onClose = () => {
     setOpen(false);
   };
-
-  const navigationKeys = [
-    "home",
-    "projects",
-    "ongoing_projects",
-    "donor_membership",
-    "volunteer_registration",
-    "gallery",
-    "notice",
-    "about_us",
-  ];
 
   const items = navigationKeys.map((key) => {
     return {

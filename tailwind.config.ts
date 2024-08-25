@@ -25,6 +25,7 @@ const config: Config = {
         "iro-dark-green": "#2E4D2B",
         "iro-dark-yellow": "#B5A642",
         "iro-bg-green": "#0A3B1E",
+        "iro-bg-yellow": "#FFF7E2",
       },
     },
   },

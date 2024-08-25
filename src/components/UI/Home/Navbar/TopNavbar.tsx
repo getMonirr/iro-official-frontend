@@ -7,7 +7,7 @@ import LanguageSwitcher from "../Language/LanguageSwitcher";
 
 const TopNavbar = () => {
   return (
-    <div className="bg-iro-bg-green text-iro-white">
+    <div className="bg-iro-green md:bg-iro-light-green text-white md:text-black">
       <RootContainer>
         <div className="flex flex-col lg:flex-row items-center justify-between lg:h-9 gap-4">
           <div className="flex items-center justify-between gap-16">
@@ -26,7 +26,7 @@ const TopNavbar = () => {
               <LanguageSwitcher />
             </div>
           </div>
-          <div className="hidden md:flex items-center gap-8 justify-end">
+          <div className="hidden md:flex items-center gap-8 justify-end font-ubuntu">
             <div className="hidden lg:flex items-center justify-center gap-2">
               <MdOutlineEmail size={20} />
               <span>{siteContact.email}</span>

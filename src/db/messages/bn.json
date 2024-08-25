@@ -63,6 +63,76 @@
       "description": "আমরা একটি লাভবান সংগঠন যা মানুষের কল্যাণের জন্য কাজ করে। আমরা সবসময় প্রয়োজনমত মানুষদের সাহায্য করার জন্য প্রস্তুত। আমরা সবসময় প্রয়োজনমত মানুষদের সাহায্য করার জন্য প্রস্তুত। আমরা সবসময় প্রয়োজনমত মানুষদের সাহায্য করার জন্য প্রস্তুত।",
       "link": "/about-us",
       "button": "আরও জানুন"
+    },
+    "Footer": {
+      "address": {
+        "title": "অফিসের ঠিকানা",
+        "address": "কাহালগাঁও, ফুলবাড়িয়া, ময়মনসিংহ, বাংলাদেশ",
+        "phone": "+৮৮০ ১৬০১-৯৯৬৩৯৯",
+        "email": "salam@iro.org",
+        "availability": "(সক্রিয় : শুক্র - রবি, ১০:০০ AM - ৭:০০ PM)"
+      },
+      "usefulLink": {
+        "title": "প্রয়োজনীয় লিংকসমূহ",
+        "links": {
+          "home": {
+            "link": "/",
+            "title": "হোম"
+          },
+          "projects": {
+            "link": "/projects",
+            "title": "প্রকল্পসমূহ"
+          },
+          "ongoing_projects": {
+            "link": "/ongoing-project",
+            "title": "চলমান প্রকল্প"
+          },
+          "donor_membership": {
+            "link": "/donor-membership",
+            "title": "দাতা ও সদস্যপদ"
+          },
+          "volunteer_registration": {
+            "link": "/volunteer-registration",
+            "title": "স্বেচ্ছাসেবক নিবন্ধন"
+          },
+          "gallery": {
+            "link": "/gallery",
+            "title": "গ্যালারি"
+          },
+          "notice": {
+            "link": "/notice",
+            "title": "বিজ্ঞপ্তি"
+          },
+          "about_us": {
+            "link": "/about-us",
+            "title": "আমাদের সম্পর্কে"
+          }
+        },
+        "extraLinks": {
+          "privacyPolicy": {
+            "link": "/privacy-policy",
+            "title": "গোপনীয়তা নীতি"
+          },
+          "termsAndConditions": {
+            "link": "/terms-and-conditions",
+            "title": "শর্তাবলী"
+          },
+          "faq": {
+            "link": "/faq",
+            "title": "প্রশ্নাবলী"
+          },
+          "career": {
+            "link": "/career",
+            "title": "ক্যারিয়ার"
+          }
+        }
+      },
+      "FollowUs": {
+        "title": "আমাদের অনুসরণ করুন"
+      },
+      "copyRight": {
+        "title": "কপিরাইট © ইসলামিক রিসার্চ অর্গানাইজেশন ২০১৮"
+      }
     }
   }
 }

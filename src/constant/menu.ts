@@ -1,36 +1,17 @@
-const menus = [
-  {
-    link: "/",
-    title: "Home",
-  },
-  {
-    link: "/projects",
-    title: "Projects",
-  },
-  {
-    link: "ongoing-project",
-    title: "Ongoing Projects",
-  },
-  {
-    link: "/donor-membership",
-    title: "Donor & Membership",
-  },
-  {
-    link: "/volunteer-registration",
-    title: "Volunteer Registration",
-  },
-  {
-    link: "/gallery",
-    title: "Gallery",
-  },
-  {
-    link: "/notice",
-    title: "Notice",
-  },
-  {
-    link: "/about-us",
-    title: "About Us",
-  },
+export const navigationKeys = [
+  "home",
+  "projects",
+  "ongoing_projects",
+  "donor_membership",
+  "volunteer_registration",
+  "gallery",
+  "notice",
+  "about_us",
 ];
 
-export default menus;
+export const extraNavigationKeys = [
+  "privacyPolicy",
+  "termsAndConditions",
+  "faq",
+  "career",
+];
