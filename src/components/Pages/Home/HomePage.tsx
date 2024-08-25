@@ -1,3 +1,4 @@
+import AboutUs from "@/components/UI/Home/About/AboutUs";
 import Hero from "@/components/UI/Home/Hero/Hero";
 import MainNavbar from "@/components/UI/Home/Navbar/MainNavbar";
 import MiddleNavbar from "@/components/UI/Home/Navbar/MiddleNavbar";
@@ -12,7 +13,7 @@ const HomePage = () => {
       </div>
       <MainNavbar />
       <Hero />
-      <div id="down-page" className="h-screen bg-gray-100"></div>
+      <AboutUs />
     </>
   );
 };

@@ -39,11 +39,7 @@
         "title": "Tree Plantation and Environment Conservation",
         "description": "It is proved from various hadiths that planting trees is a good deed. As long as the planted tree is alive, all the animals and people will get flowers, fruits and shade from that tree or any benefit, it will be written in the record book of the planter as a charity. Even if the planter dies,this reward will continue to reach his record.",
         "link": "/projects",
-        "button": "Learn More",
-        "photo": {
-          "src": "../../assets/images/hero/iro-bg-crop.png",
-          "alt": "Tree Plantation"
-        }
+        "button": "Learn More"
       },
       "next-hero": {
         "title": "Welcome to our website 2",
@@ -61,6 +57,12 @@
         "link": "/login",
         "title": "Login"
       }
+    },
+    "AboutUs": {
+      "title": "About Us",
+      "description": "We are a non-profit organization that works for the welfare of the people. We are always ready to help the people in need. We are always ready to help the people in need. We are always ready to help the people in need.",
+      "link": "/about-us",
+      "button": "Learn More"
     }
   }
 }

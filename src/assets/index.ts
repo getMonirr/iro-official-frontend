@@ -1,4 +1,5 @@
 // images
+import iroAboutTree from "@/assets/images/about/about-tree-with-shadow.png";
 import iroHeroBg from "@/assets/images/hero/hero-bg.jpg";
 import iroHeroBgCrop from "@/assets/images/hero/iro-bg-crop.png";
 import iroHeroBg2 from "@/assets/images/hero/tree2.jpg";
@@ -15,6 +16,7 @@ const assets = {
     iroHeroBg,
     iroHeroBgCrop,
     iroHeroBg2,
+    iroAboutTree,
   },
   svgs: {
     // languages: {
