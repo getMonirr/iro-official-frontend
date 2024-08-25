@@ -83,7 +83,7 @@ const MainNavbar = () => {
   );
 
   return (
-    <div className="bg-iro-light-green md:bg-iro-green flex items-center py-2 md:py-0">
+    <div className="bg-iro-light-green md:bg-iro-green flex items-center py-2 md:py-0 sticky top-0 z-50 shadow-xl">
       <RootContainer>
         {/* hidden in large device and show small device */}
         <div className="flex items-center justify-between md:hidden">

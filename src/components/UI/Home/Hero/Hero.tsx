@@ -1,9 +1,11 @@
 import assets from "@/assets";
 import RootContainer from "@/components/Shared/RootContainer";
 import { Button, Carousel } from "antd";
+
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { RxDoubleArrowRight } from "react-icons/rx";
+import GoDown from "../../ScrollBar/GoDown";
 
 const Hero = () => {
   const t = useTranslations("HomePage");
@@ -64,6 +66,7 @@ const Hero = () => {
                     </Button>
                   </div>
                 </div>
+                <GoDown />
               </RootContainer>
             </div>
           );

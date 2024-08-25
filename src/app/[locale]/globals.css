@@ -28,3 +28,15 @@ body {
   size: 10px !important;
   margin-top: 180% !important;
 }
+
+/* progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--iro-dark-yellow);
+  transform-origin: 0%;
+  z-index: 1000;
+}

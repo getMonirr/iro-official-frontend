@@ -12,6 +12,7 @@ const HomePage = () => {
       </div>
       <MainNavbar />
       <Hero />
+      <div id="down-page" className="h-screen bg-gray-100"></div>
     </>
   );
 };
