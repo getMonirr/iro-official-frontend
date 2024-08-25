@@ -1,7 +1,8 @@
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
-dotenv.config({ path: process.cwd() + ".env" });
+// dotenv.config({ path: process.cwd() + ".env" });
 
-export const config = {
+export const configs = {
   apiUrl: process.env.NEXT_PUBLIC_API_URL,
+  locales: ["bn", "en"],
 };

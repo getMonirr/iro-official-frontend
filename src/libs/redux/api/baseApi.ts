@@ -5,14 +5,14 @@ import type {
 } from "@reduxjs/toolkit/query";
 import { toast } from "react-toastify";
 
-import { config } from "@/config";
+import { configs } from "@/config";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { RootState } from "../store";
 import { appTags } from "../tags";
 
 // Create a baseQuery with the baseUrl and credentials
 const baseQuery = fetchBaseQuery({
-  baseUrl: `${config.apiUrl}`,
+  baseUrl: `${configs.apiUrl}`,
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token;

@@ -1,23 +1,36 @@
 "use client";
 
 import { Grid, Select } from "antd";
+import { usePathname, useRouter } from "next/navigation";
+import { useTransition } from "react";
 
 const { useBreakpoint } = Grid;
 
 const LanguageSwitcher = () => {
   const screens = useBreakpoint();
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const pathName = usePathname();
+
+  // Handle language change
+  const handleLanguageChange = (local: string) => {
+    startTransition(() => {
+      router.replace(`/${local}`);
+    });
+  };
 
   // Determine size based on screen size
   const size = screens.xs ? "small" : "middle";
   return (
     <Select
-      defaultValue="BN"
+      onSelect={handleLanguageChange}
+      defaultValue={pathName === "/bn" ? "bn" : "en"}
       style={{ width: 100 }}
+      disabled={isPending}
       size={size}
-      //   onChange={handleChange}
       options={[
         {
-          value: "BN",
+          value: "bn",
           label: (
             <span className="flex items-center justify-center gap-4">
               <svg
@@ -51,7 +64,7 @@ const LanguageSwitcher = () => {
           ),
         },
         {
-          value: "EN",
+          value: "en",
           label: (
             <span className="flex items-center justify-center gap-4">
               <svg

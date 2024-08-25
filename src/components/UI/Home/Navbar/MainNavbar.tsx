@@ -2,8 +2,8 @@
 
 import assets from "@/assets";
 import RootContainer from "@/components/Shared/RootContainer";
-import menus from "@/constant/menu";
 import { Button, Menu } from "antd";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -15,17 +15,10 @@ import Donation from "./Donation";
 import Login from "./Login";
 import MobileNavbar from "./MobileNavbar";
 
-const items = menus.map((menu) => {
-  return {
-    key: menu.link,
-    label: menu.title,
-    href: menu.link,
-  };
-});
-
 const MainNavbar = () => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const t = useTranslations("HomePage");
 
   const showDrawer = () => {
     setOpen(true);
@@ -34,6 +27,25 @@ const MainNavbar = () => {
   const onClose = () => {
     setOpen(false);
   };
+
+  const navigationKeys = [
+    "home",
+    "projects",
+    "ongoing_projects",
+    "donor_membership",
+    "volunteer_registration",
+    "gallery",
+    "notice",
+    "about_us",
+  ];
+
+  const items = navigationKeys.map((key) => {
+    return {
+      key: t(`Navigation.${key}.link`),
+      label: t(`Navigation.${key}.title`),
+      href: t(`Navigation.${key}.link`),
+    };
+  });
 
   const DesktopSiteMenu = (
     <Menu

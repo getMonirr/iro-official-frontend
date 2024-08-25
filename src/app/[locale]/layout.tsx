@@ -4,6 +4,8 @@ import "./globals.css";
 
 // custom import
 import AllProviders from "@/providers/AllProviders";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 // ubuntu font
 const ubuntu = Ubuntu({
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
 };
 
 // RootLayout component
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const messages = await getMessages();
+
   return (
     <html
       lang="en"
@@ -33,7 +37,11 @@ export default function RootLayout({
       }}
     >
       <body className={ubuntu.className}>
-        <AllProviders>{children}</AllProviders>
+        <AllProviders>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </AllProviders>
       </body>
     </html>
   );
