@@ -4,6 +4,7 @@ import Hero from "@/components/UI/Home/Hero/Hero";
 import MainNavbar from "@/components/UI/Home/Navbar/MainNavbar";
 import MiddleNavbar from "@/components/UI/Home/Navbar/MiddleNavbar";
 import TopNavbar from "@/components/UI/Home/Navbar/TopNavbar";
+import IroProjects from "@/components/UI/Home/Projects/IroProjects";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <MainNavbar />
       <Hero />
       <AboutUs />
+      <IroProjects />
       <Footer />
     </>
   );
