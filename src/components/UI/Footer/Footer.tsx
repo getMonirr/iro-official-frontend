@@ -13,9 +13,11 @@ const Footer = () => {
       <SectionStarter className={"bg-iro-bg-yellow"}>
         <div className="font-ubuntu bg-iro-bg-yellow">
           <RootContainer>
-            <div className="flex flex-col md:flex-row items-start justify-between">
+            <div className="flex flex-col md:flex-row items-start justify-between gap-8">
               <div>
-                <p className="pb-6 text-iro-green">{t("address.title")}</p>
+                <p className=" pb-4 lg:pb-6 text-iro-green">
+                  {t("address.title")}
+                </p>
                 <div className="space-y-1 text-zinc-600">
                   <p>{t("address.address")}</p>
                   <p>Support: salam@iro.org</p>
@@ -24,7 +26,9 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <p className="pb-6 text-iro-green">{t("usefulLink.title")}</p>
+                <p className=" pb-4 lg:pb-6 text-iro-green">
+                  {t("usefulLink.title")}
+                </p>
                 <div className="space-y-1 text-zinc-600 flex flex-col">
                   {navigationKeys.map((key) => (
                     <Link
@@ -47,7 +51,7 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <p className="pb-6 text-iro-green">Follow Us</p>
+                <p className=" pb-4 lg:pb-6 text-iro-green">Follow Us</p>
                 <div className="flex items-center gap-4 justify-start">
                   <Link href={siteLinks.socials.facebook}>
                     <FaFacebook size={25} className="hover:text-iro-green" />

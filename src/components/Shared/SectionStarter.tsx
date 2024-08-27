@@ -8,7 +8,7 @@ const SectionStarter = ({
   children: ReactNode;
   className?: String;
 }) => {
-  return <div className={cn("py-32", className)}>{children}</div>;
+  return <div className={cn("py-16 md:py-32", className)}>{children}</div>;
 };
 
 export default SectionStarter;

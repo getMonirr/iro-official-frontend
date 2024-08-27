@@ -12,12 +12,14 @@ const AboutUs = () => {
     <SectionStarter className={"bg-iro-light-green"}>
       <div id="down-page" className="bg-iro-light-green">
         <RootContainer>
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="max-w-2xl">
-              <h1 className="text-4xl font-bold underline underline-offset-8 text-iro-green">
+              <h1 className="text-3xl md:text-4xl font-bold underline underline-offset-8 text-iro-green">
                 {t("title")}
               </h1>
-              <p className="text-lg mt-5 font-ubuntu ">{t("description")}</p>
+              <p className="text-base md:text-lg mt-5 font-ubuntu ">
+                {t("description")}
+              </p>
               <Button
                 className="mt-8"
                 type="primary"
