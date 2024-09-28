@@ -1,5 +1,6 @@
 export const navigationKeys = [
   "home",
+  "library",
   "projects",
   "ongoing_projects",
   "donor_membership",

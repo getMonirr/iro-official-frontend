@@ -2,35 +2,39 @@
   "HomePage": {
     "Navigation": {
       "home": {
-        "link": "/",
+        "link": "/en/",
         "title": "Home"
       },
+      "library": {
+        "link": "/en/library",
+        "title": "Library"
+      },
       "projects": {
-        "link": "/projects",
+        "link": "/en/projects",
         "title": "Projects"
       },
       "ongoing_projects": {
-        "link": "/ongoing-project",
+        "link": "/en/ongoing-project",
         "title": "Ongoing Projects"
       },
       "donor_membership": {
-        "link": "/donor-membership",
+        "link": "/en/donor-membership",
         "title": "Donor & Membership"
       },
       "volunteer_registration": {
-        "link": "/volunteer-registration",
+        "link": "/en/volunteer-registration",
         "title": "Volunteer Registration"
       },
       "gallery": {
-        "link": "/gallery",
+        "link": "/en/gallery",
         "title": "Gallery"
       },
       "notice": {
-        "link": "/notice",
+        "link": "/en/notice",
         "title": "Notice"
       },
       "about_us": {
-        "link": "/about-us",
+        "link": "/en/about-us",
         "title": "About Us"
       }
     },
@@ -38,30 +42,30 @@
       "tree-plane": {
         "title": "Tree Plantation and Environment Conservation",
         "description": "It is proved from various hadiths that planting trees is a good deed. As long as the planted tree is alive, all the animals and people will get flowers, fruits and shade from that tree or any benefit, it will be written in the record book of the planter as a charity. Even if the planter dies,this reward will continue to reach his record.",
-        "link": "/projects",
+        "link": "/en/projects",
         "button": "Learn More"
       },
       "next-hero": {
         "title": "Welcome to our website 2",
         "description": "We are a non-profit organization that works for the welfare of the people. We are always ready to help the people in need. We are always ready to help the people in need. We are always ready to help the people in need.",
-        "link": "/projects2",
+        "link": "/en/projects2",
         "button": "Learn More"
       }
     },
     "Button": {
       "Donation": {
-        "link": "/donate",
+        "link": "/en/donate",
         "title": "Donate Now"
       },
       "Login": {
-        "link": "/login",
+        "link": "/en/login",
         "title": "Login"
       }
     },
     "AboutUs": {
       "title": "About Us",
       "description": "We are a non-profit organization that works for the welfare of the people. We are always ready to help the people in need. We are always ready to help the people in need. We are always ready to help the people in need.",
-      "link": "/about-us",
+      "link": "/en/about-us",
       "button": "Learn More"
     },
     "Footer": {
@@ -79,50 +83,54 @@
             "link": "/",
             "title": "Home"
           },
+          "library": {
+            "link": "/en/library",
+            "title": "Library"
+          },
           "projects": {
-            "link": "/projects",
+            "link": "/en/projects",
             "title": "Projects"
           },
           "ongoing_projects": {
-            "link": "/ongoing-project",
+            "link": "/en/ongoing-project",
             "title": "Ongoing Projects"
           },
           "donor_membership": {
-            "link": "/donor-membership",
+            "link": "/en/donor-membership",
             "title": "Donor & Membership"
           },
           "volunteer_registration": {
-            "link": "/volunteer-registration",
+            "link": "/en/volunteer-registration",
             "title": "Volunteer Registration"
           },
           "gallery": {
-            "link": "/gallery",
+            "link": "/en/gallery",
             "title": "Gallery"
           },
           "notice": {
-            "link": "/notice",
+            "link": "/en/notice",
             "title": "Notice"
           },
           "about_us": {
-            "link": "/about-us",
+            "link": "/en/about-us",
             "title": "About Us"
           }
         },
         "extraLinks": {
           "privacyPolicy": {
-            "link": "/privacy-policy",
+            "link": "/en/privacy-policy",
             "title": "Privacy Policy"
           },
           "termsAndConditions": {
-            "link": "/terms-and-conditions",
+            "link": "/en/terms-and-conditions",
             "title": "Terms & Conditions"
           },
           "faq": {
-            "link": "/faq",
+            "link": "/en/faq",
             "title": "FAQ"
           },
           "career": {
-            "link": "/career",
+            "link": "/en/career",
             "title": "Career"
           }
         }

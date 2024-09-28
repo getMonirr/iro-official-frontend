@@ -9,7 +9,7 @@ const SectionParagraph = ({
   className?: string;
 }) => {
   return (
-    <p className={cn("text-base md:text-lg mt-5 font-ubuntu", className)}>
+    <p className={cn("text-base md:text-lg mt-5 font-ubuntu mb-10", className)}>
       {children}
     </p>
   );

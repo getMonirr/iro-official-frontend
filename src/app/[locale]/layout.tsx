@@ -3,9 +3,10 @@ import { Ubuntu } from "next/font/google";
 import "./globals.css";
 
 // custom import
+import { routing } from "@/i18n/routing";
 import AllProviders from "@/providers/AllProviders";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 
 // ubuntu font
 const ubuntu = Ubuntu({
@@ -19,12 +20,19 @@ export const metadata: Metadata = {
   description: "Created by IRO Dev Team",
 };
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 // RootLayout component
 export default async function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  unstable_setRequestLocale(locale);
   const messages = await getMessages();
 
   return (

@@ -2,9 +2,7 @@
 
 import assets from "@/assets";
 import RootContainer from "@/components/Shared/RootContainer";
-import { navigationKeys } from "@/constant/menu";
 import { Button, Menu } from "antd";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -16,10 +14,23 @@ import Donation from "./Donation";
 import Login from "./Login";
 import MobileNavbar from "./MobileNavbar";
 
-const MainNavbar = () => {
+interface INavItems {
+  key: string;
+  label: string;
+  href: string;
+}
+
+const MainNavbar = ({
+  items,
+  isLogoShow,
+  isDonationShow,
+}: {
+  items: INavItems[];
+  isLogoShow?: boolean;
+  isDonationShow?: boolean;
+}) => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
-  const t = useTranslations("HomePage");
 
   const showDrawer = () => {
     setOpen(true);
@@ -28,14 +39,6 @@ const MainNavbar = () => {
   const onClose = () => {
     setOpen(false);
   };
-
-  const items = navigationKeys.map((key) => {
-    return {
-      key: t(`Navigation.${key}.link`),
-      label: t(`Navigation.${key}.title`),
-      href: t(`Navigation.${key}.link`),
-    };
-  });
 
   const DesktopSiteMenu = (
     <Menu
@@ -79,18 +82,20 @@ const MainNavbar = () => {
         <div className="flex items-center justify-between md:hidden">
           <div className="flex items-center gap-4">
             <Button onClick={showDrawer} icon={<IoMdMenu />} />
-            <Link href="/">
-              <Image
-                src={assets.images.iroLogo}
-                alt="IRO LOGO"
-                width={25}
-                height={25}
-              />
-            </Link>
+            {isLogoShow && (
+              <Link href="/">
+                <Image
+                  src={assets.images.iroLogo}
+                  alt="IRO LOGO"
+                  width={25}
+                  height={25}
+                />
+              </Link>
+            )}
           </div>
 
           <div className="flex items-center gap-3">
-            <Donation />
+            {isDonationShow && <Donation />}
             <Login />
           </div>
         </div>
