@@ -40,3 +40,14 @@ body {
   transform-origin: 0%;
   z-index: 1000;
 }
+
+.lookInside {
+  transform: rotateY(0deg);
+  transition: transform ease-in-out 0.5s;
+  transform-origin: 0 0 0;
+}
+
+.lookInside:hover {
+  transform: rotateY(-20deg);
+  transition: transform ease-in-out 0.5s;
+}

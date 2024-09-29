@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 import "./globals.css";
 
 // custom import

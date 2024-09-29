@@ -1,17 +1,19 @@
+import BookDetailsContent from "@/components/Pages/Library/BookDetails/BookDetailsContent";
+import CoverImage from "@/components/Pages/Library/BookDetails/CoverImage";
+import RelatedBooks from "@/components/Pages/Library/BookDetails/RelatedBooks";
+import RootContainer from "@/components/Shared/RootContainer";
 import bookData from "@/db/book.json";
+import { IBook } from "@/types/book";
+import LoadingImage from "antd/es/skeleton/Image";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
-interface Book {
-  id: string;
-  title: string;
-  // Add other properties as needed
-}
-
-const getBook = async (bookId: string): Promise<Book | undefined> => {
+const getBook = async (bookId: string): Promise<IBook | undefined> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const book = bookData.find((book) => book.id === bookId) as
-        | Book
+        | IBook
         | undefined;
       resolve(book);
     }, 1000);
@@ -41,14 +43,57 @@ export async function generateStaticParams() {
   }));
 }
 
-const BookDetails = ({
+const BookDetails = async ({
   params: { bookId, locale },
 }: {
   params: { bookId: string; locale: string };
 }) => {
+  // it is important to set the locale for the request
+  // because i18n
   unstable_setRequestLocale(locale);
 
-  return <div>single book details {bookId}</div>;
+  // get the book details
+  const book = await getBook(bookId);
+
+  if (!book) {
+    return notFound();
+  }
+
+  const { coverImageUrl, edition, pdfPreview } = book;
+
+  return (
+    <RootContainer className="my-6">
+      <div className="flex gap-8 lg:flex-row flex-col">
+        <div className="flex lg:flex-row flex-col gap-8 flex-1">
+          <div>
+            <Suspense
+              fallback={
+                <div className="border border-gray-400 py-4 px-8 cursor-pointer ">
+                  <LoadingImage
+                    active
+                    style={{
+                      width: "300px",
+                      height: "300px",
+                    }}
+                  />
+                </div>
+              }
+            >
+              <CoverImage
+                image={coverImageUrl}
+                pdfUrl={pdfPreview?.url as string}
+                edition={edition}
+              />
+            </Suspense>
+          </div>
+          <div className="flex-1">
+            <BookDetailsContent book={book} />
+          </div>
+        </div>
+        <RelatedBooks />
+      </div>
+    </RootContainer>
+  );
 };
 
 export default BookDetails;

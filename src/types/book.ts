@@ -1,5 +1,6 @@
 export interface IBook {
   id: string;
+  category: string;
   title: string;
   author: string;
   description: string;
@@ -15,6 +16,7 @@ export interface IBook {
   publisher: string;
   library?: string;
   availability: IAvailability;
+  edition: string;
 }
 
 interface IPDFPreview {
