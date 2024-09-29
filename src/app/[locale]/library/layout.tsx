@@ -4,6 +4,12 @@ import { routing } from "@/i18n/routing";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 
+import { polyfillPromiseWithResolvers } from "@/utils/polyfilsResolver";
+
+import "core-js/full/promise/with-resolvers.js";
+
+polyfillPromiseWithResolvers();
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }

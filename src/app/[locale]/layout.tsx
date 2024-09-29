@@ -10,6 +10,12 @@ import AllProviders from "@/providers/AllProviders";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 
+import { polyfillPromiseWithResolvers } from "@/utils/polyfilsResolver";
+
+import "core-js/full/promise/with-resolvers.js";
+
+polyfillPromiseWithResolvers();
+
 // ubuntu font
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],

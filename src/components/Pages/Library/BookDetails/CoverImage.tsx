@@ -47,6 +47,7 @@ const CoverImage = ({
         title="Read a little"
       >
         <LookInside pdf={pdfUrl} />
+        {/* <div>coming soon</div> */}
       </IROModal>
     </div>
   );
