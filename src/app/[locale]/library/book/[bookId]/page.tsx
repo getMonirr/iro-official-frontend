@@ -1,4 +1,5 @@
 import BookDetailsContent from "@/components/Pages/Library/BookDetails/BookDetailsContent";
+import BookSummary from "@/components/Pages/Library/BookDetails/BookSummary";
 import CoverImage from "@/components/Pages/Library/BookDetails/CoverImage";
 import RelatedBooks from "@/components/Pages/Library/BookDetails/RelatedBooks";
 import RootContainer from "@/components/Shared/RootContainer";
@@ -6,6 +7,7 @@ import bookData from "@/db/book.json";
 import { IBook } from "@/types/book";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 const getBook = async (bookId: string): Promise<IBook | undefined> => {
   return new Promise((resolve) => {
@@ -76,6 +78,9 @@ const BookDetails = async ({
         </div>
         <RelatedBooks />
       </div>
+      <Suspense fallback={<div>Book Summary is loading</div>}>
+        <BookSummary book={book} />
+      </Suspense>
     </RootContainer>
   );
 };
